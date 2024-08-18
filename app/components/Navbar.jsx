@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useParams, usePathname, useRouter } from 'next/navigation'
 import React from 'react'
+import MobileNav from './MobileNav'
 
 const Navbar = () => {
     const router = usePathname()
@@ -26,17 +27,20 @@ const Navbar = () => {
     ]
 
   return (
-    <div className='h-full w-full px-44 flex items-center justify-between'>
-      <h1 className='text-3xl font-bold'>
+    <div className='h-full w-full md:px-44 px-12 flex items-center justify-between'>
+      <h1 className='md:text-3xl text-2xl font-bold text-white'>
         Space.Inc
       </h1>
-      <nav className='flex gap-5 items-center bg-white px-2 py-2'>
+      <nav className='md:flex hidden gap-5 items-center bg-white px-2 py-2'>
         {links.map(link => (
             <div key={link.id} className={`${router === link.link ? 'text-white bg-black px-1 py-1' : 'text-black'}`}>
                 <Link href={link.link}>{link.name}</Link>
             </div>
         ))}
       </nav>
+      <div className='md:hidden'>
+        <MobileNav/>
+      </div> 
     </div>
   )
 }
