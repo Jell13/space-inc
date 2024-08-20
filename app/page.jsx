@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="h-full w-full flex items-center justify-center">
       <div className="h-[500px]">
-        <Spline scene="https://prod.spline.design/q8AJdlcc0iDWxXKk/scene.splinecode"/>
+        <Spline scene="https://prod.spline.design/6OSfVOf6RyhA5jL1/scene.splinecode"/>
       </div>
     </div>
   );
