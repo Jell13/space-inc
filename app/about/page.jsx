@@ -14,7 +14,11 @@ const page = () => {
           </p>
           <p>
             Here in Space.Inc, we're passionate about turning the dream of space exploration into a reality for
-            everyone
+            everyone. <br />
+            Inspiring people's curiosity, fuel the spirit of exploration, and make the mysteries of space accessible 
+            to all. <br />
+            Space.Inc is your partner in the journey to explore the cosmos. Join us as we embark on adventures beyond 
+            the Earth and into the unknown.
           </p>
         </div>
       </div>
