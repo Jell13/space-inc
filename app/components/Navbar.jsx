@@ -28,12 +28,12 @@ const Navbar = () => {
 
   return (
     <div className='h-full w-full md:px-44 px-12 flex items-center justify-between'>
-      <h1 className='md:text-3xl text-2xl font-bold text-white'>
+      <h1 className='md:text-4xl text-2xl font-bold text-white'>
         Space.Inc
       </h1>
       <nav className='md:flex hidden gap-5 items-center bg-white px-2 py-2'>
         {links.map(link => (
-            <div key={link.id} className={`${router === link.link ? 'text-white bg-black px-1 py-1' : 'text-black'}`}>
+            <div key={link.id} className={`${router === link.link ? 'text-white bg-black px-1 py-1' : 'text-black'} hover:bg-black hover:text-white hover:px-1 hover:py-1 duration-300`}>
                 <Link href={link.link}>{link.name}</Link>
             </div>
         ))}
