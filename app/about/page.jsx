@@ -1,9 +1,10 @@
 import React from 'react'
+import Spline from '@splinetool/react-spline/next';
 
 const page = () => {
   return (
-    <div className='flex flex-col md:px-44 px-12 gap-4 mt-10'>
-      <div className='text-white flex flex-col gap-4'>
+    <div className='w-full h-full flex flex-col md:px-44 px-12 gap-4 mt-10'>
+      <div className='text-white flex flex-col gap-4 mb-10'>
         <h3 className='font-bold text-2xl'>About Space.Inc</h3>
         <div className='flex flex-col gap-6'>
           <p>The cosmos is more than just the final frontier. it's the ultimate playground for adventure
@@ -22,6 +23,9 @@ const page = () => {
           </p>
         </div>
       </div>
+      <Spline
+        scene="https://prod.spline.design/8JmWbTNo58p5UW94/scene.splinecode" 
+      />
     </div>
   )
 }
