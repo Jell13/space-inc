@@ -24,7 +24,7 @@ const page = () => {
         </div>
       </div>
           <Spline
-            scene="https://prod.spline.design/AQ0IUoRrCNqYDcgE/scene.splinecode"
+            scene="https://prod.spline.design/kYrxPIhW7w4ejSpE/scene.splinecode"
           />
     </div>
   )
