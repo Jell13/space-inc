@@ -1,9 +1,8 @@
 import React from 'react'
-import Spline from "@splinetool/react-spline";
 
 const page = () => {
   return (
-    <div className='flex flex-col md:px-44 px-12 gap-4 mt-10 pb-20'>
+    <div className='flex flex-col md:px-44 px-12 gap-4 mt-10'>
       <div className='text-white flex flex-col gap-4'>
         <h3 className='font-bold text-2xl'>About Space.Inc</h3>
         <div className='flex flex-col gap-6'>
@@ -23,9 +22,6 @@ const page = () => {
           </p>
         </div>
       </div>
-          <Spline
-            scene="https://prod.spline.design/kYrxPIhW7w4ejSpE/scene.splinecode"
-          />
     </div>
   )
 }
